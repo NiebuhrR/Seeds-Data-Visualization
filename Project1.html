@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<!-- Project 1 HTML file
+     Quyen Ha and Marty Dang
+     -->
+
+<head>
+  
+  <meta charset="utf-8">
+
+  <title>Project 1</title>
+
+  <!-- D3 from Murray == 4.5, with a local copy-->
+  <script type="text/javascript" src="d3.js"></script>
+
+  <!-- the css is in an external file -->
+  <link rel="stylesheet" type="text/css" href="Project1.css">
+
+ </head>
+
+<body>
+
+  <!-- this div contains the bar graph and the sorting buttons -->
+  <div id="BarGraph"> 
+    <div id="tooltip" class="hidden">
+      <p><strong>Seed Area</strong></p> <p><span id="value">100</span></p>
+    </div>
+
+    <div id="ButtonContainer">
+      <button id="sortAscending" type= "button">Ascending</button>
+      <button id="sortDescending" type= "button">Descending</button>
+    </div>
+  </div>
+
+  <!-- this div contains the scatter plot and the menu -->
+  <div id="ScatterPlot">
+    <div id="controls">
+      <br>
+      <small>Pick attributes to display on the X and Y axis:</small>
+      <p>
+	X Axis:
+	<br>
+	<select id="xSelect">
+	  <optgroup label="Attributes" id="xmetrics"></optgroup>
+	</select>
+      </p>
+      <p>
+	Y Axis:
+	<br>
+	<select id="ySelect">
+	  <optgroup label="Attributes" id="ymetrics"></optgroup>
+	</select>
+      </p>
+    </div>
+  </div>
+ 
+  <!-- the js is in an external file -->
+  <script type="text/javascript" src="BarGraph.js"></script>
+  <script type="text/javascript" src="ScatterPlot.js"></script> 
+
+</body>
+  
+</html>
